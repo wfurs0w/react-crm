@@ -1,0 +1,30 @@
+.new-trip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #adadad48;
+  margin: 20px 0;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+
+  &__title {
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+.success {
+  text-align: center;
+  padding: 5px;
+  margin-top: 15px;
+  border-radius: 20px;
+  background-color: rgba(8, 131, 8, 0.384);
+}
+
+.error {
+  text-align: center;
+  padding: 5px;
+  margin-top: 15px;
+  border-radius: 20px;
+  background-color: rgba(252, 1, 1, 0.26);
+}

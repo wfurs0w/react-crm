@@ -1,70 +1,50 @@
-# Getting Started with Create React App
+# React CRM
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[DEMO](https://react-crm-2bab5.web.app/)
 
-## Available Scripts
+This project implemented a small CPM for passenger transportation.
+During registration, users are given a choice of roles (passenger, driver, dispatcher).
+When you log in again, the role selection is skipped.
+The role you choose determines the content and capabilities that you choose to display.
+For example, drivers and dispatchers can create new trips and see their list, but this function is not available for a passenger.
+There is also an admin role that gives access to all content and features. 
+This role cannot be selected during registration, in order to enter the application with the "admin" role, you need to log in to a pre-created account:
 
-In the project directory, you can run:
+        mail:  admin@mail.com
+    password:  user1234
 
-### `npm start`
+The admin has access to a list with data about all users that he can edit.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+You can also log in to pre-created accounts for all roles:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+        mail:  passenger@mail.com
+               driver@mail.com
+               dispatcher@mail.com
+    password: user1234 (for everyone);
+    
+You can sign in in several ways:
+  - Google;
+  - Facebook;
+  - Phone 
+      Using your real number or test: 
+      +1 650-505-5050 
+      Verification code: 555555  
+  - Mail;
 
-### `npm test`
+## Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- React:
+  - React Router;
+  - React Icons;
+  - JSX
+- Firebase:
+  - Firestore;
+  - FirebaseUI;
+- Bootstrap 4;
+- SCSS
 
-### `npm run build`
+## For start:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Clone repo.
+- Run `npm install` to install dependencies.
+- Run `npm start` to open in browser.

@@ -1,0 +1,48 @@
+.menu {
+  display: flex;
+  height: calc(100vh - 60px);
+  background-color: #2b2929;
+}
+
+.nav {
+  opacity: 1;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &-link {
+    color: #fff;
+    text-align: center;
+    transition: color 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    &:hover {
+      color: #a283f58f;
+    }
+  }
+
+  &-icon {
+    font-size: 26px;
+  }
+}
+
+.tooltip {
+  width: 90px;
+  position: absolute;
+  left: 50px;
+  background-color: #2b2929; 
+  padding: 20px 10px; 
+  border-radius: 4px; 
+  white-space: nowrap; 
+  opacity: 0; 
+  visibility: hidden; 
+  transition: opacity 0.3s, visibility 0.3s; 
+}
+
+.nav-link:hover .tooltip {
+  opacity: 1;
+  visibility: visible; 
+}
